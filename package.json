@@ -1,0 +1,12 @@
+{
+  "name": "soccer-vs-backend",
+  "version": "1.0.0",
+  "description": "API Proxy for Soccer-VS",
+  "main": "server.js",
+  "repository": "https://github.com/elishaking/soccer-vs-backend.git",
+  "author": "King Elisha <ek.chibueze@gmail.com>",
+  "license": "GPL-2.0",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
