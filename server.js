@@ -11,6 +11,12 @@ server.use(allowCrossDomain);
 
 const url = "https://www.easports.com/fifa/ultimate-team";
 
+server.get("/", (_, res) => {
+  res.status(200).json({
+    success: true
+  });
+});
+
 /**
  * Get player from name
  */
