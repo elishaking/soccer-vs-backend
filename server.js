@@ -5,6 +5,9 @@ const server = express();
 
 const url = "https://www.easports.com/fifa/ultimate-team";
 
+/**
+ * Get player from name
+ */
 server.get("api/:name", (req, res) => {
   const playerName = req.params.name;
   axios
