@@ -1,7 +1,11 @@
 const express = require("express");
 const axios = require("axios").default;
 
+const allowCrossDomain = require("./utils/cors");
+
 const server = express();
+
+server.use(allowCrossDomain);
 
 const url = "https://www.easports.com/fifa/ultimate-team";
 
