@@ -1,10 +1,12 @@
 const express = require("express");
 const axios = require("axios").default;
+const helmet = require("helmet");
 
 const allowCrossDomain = require("./utils/cors");
 
 const server = express();
 
+server.use(helmet());
 server.use(allowCrossDomain);
 
 const url = "https://www.easports.com/fifa/ultimate-team";
